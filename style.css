@@ -1,0 +1,229 @@
+body {
+    background-color: black;   
+}
+/* styling navigation bar*/
+.my-nav{
+   background-color: #be034b;
+
+}
+.nav-link{
+    color: yellow;
+}
+.nav-link:hover{
+    color: rgb(0, 255, 13);
+}
+.nav-link:active{
+    color: rgb(0, 0, 0);
+}
+
+.container{
+    background-color: rgb(255, 253, 110);
+}
+.splash-screen{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-image: url('img/banner.jpg');
+    background-size: cover;
+}
+
+.splash-screen .cta{
+    padding:20px;
+    background-color:rgba(245, 7, 90, 0.5);
+    color:yellow;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.banner-image{
+    padding:0px;
+}
+.tte-content{
+    height: 100vh;    
+    background-image: url('img/main_pic.gif');
+    text-align: center;
+}
+.tte-content h1 {
+    color:rgb(0, 0, 0);
+    font-size:70px;
+    font-style: italic;
+}
+.dancer-row{
+    background-image: url('img/floral_bkgnd.jpg')
+}
+.section-heading{
+    color:yellow;
+}
+.card-dancer{
+    height: 100%;           
+}
+.card-body{
+    background-color: rgb(230, 199, 114);
+}
+/* styling image gallery*/
+.gallery-header{
+    background-color: #be034b;
+    color: yellow;
+    overflow: hidden;
+}
+.carousel {
+    position: relative;    
+}
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+.carousel-indicators li {
+    position: relative;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(0,0,0,1);
+}
+.carousel-indicators li::before {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    content: "";
+}
+.carousel-indicators li::after {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    content: "";
+}
+.carousel-item {    
+    height: 100vh;
+    min-height: 4em;
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+.carousel-caption{
+    background-color: rgb(230, 199, 114);
+    color:black;
+}
+/* styling upcoming section*/
+.upcoming-container{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+}
+ .cta-inner{
+    padding: .5em;
+    margin: .5em;
+    background-color: rgba(252, 238, 54);
+    border-radius: 1em;
+    text-align: center;
+    
+}
+.section-heading-lower {
+    display: block;
+    font-size: 3rem;
+    font-weight: 100;
+    color:rgb(22, 22, 22);
+}
+.section-heading-upper {
+    display: block;
+    font-size: 2rem;
+    font-weight: 500;
+    color:rgb(8, 8, 8);
+    padding:1em;
+}
+/* styling contact us section, first parallax, then contact detailsS*/
+.parallax{
+    background-image: url('img/parallax.jpg');
+    height:50vh;
+    background-size:cover;
+    background-attachment: fixed;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.parallax .tagline{
+    padding:15px 40px;
+    background-color: rgba(0,0,0,0.6);
+    border-radius:10px;
+}
+.contact-container{
+    height:50vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-color: rgba(252, 238, 54);    
+}
+#contactTTE .card{
+    height:100%;
+    font-size:1em;
+    border:none;
+    background-color: rgba(252, 238, 54);
+}
+#contactTTE h2{
+    font-style:italic;
+}
+.contact-class{
+    font-size:3em;
+}
+/* styling footer*/
+ .TTEfooter{
+    position:fixed;
+    bottom:0;
+    display:block;
+    width:100%;
+    height:2em;
+    line-height:1em;
+    background-color: #be034b;
+    color:rgb(243, 228, 12);
+    padding:10px;
+}
+/* styling animated text on top of page*/
+.display-anime{    
+    width: 5em;
+    height: 5em;
+    background: rgb(245, 232, 50);
+    position: relative;    
+    -webkit-animation: mymove 10s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 10s infinite;
+    animation-direction: reverse;
+}
+
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 1200px;}
+}
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 1200px;}
+}
+
+hr {
+    max-width: 10em;
+    border-width: 0.5em;
+    border-color: #f0b240;
+}
+
+ 
