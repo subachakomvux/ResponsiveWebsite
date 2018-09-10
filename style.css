@@ -42,7 +42,7 @@ body {
 .tte-content{
     height: 100vh;    
     background-image: url('img/main_pic.gif');
-    text-align: center;
+    text-align: center;    
 }
 .tte-content h1 {
     color:rgb(0, 0, 0);
@@ -200,26 +200,7 @@ body {
     color:rgb(243, 228, 12);
     padding:10px;
 }
-/* styling animated text on top of page*/
-.display-anime{    
-    width: 5em;
-    height: 5em;
-    background: rgb(245, 232, 50);
-    position: relative;    
-    -webkit-animation: mymove 10s infinite; /* Safari 4.0 - 8.0 */
-    animation: mymove 10s infinite;
-    animation-direction: reverse;
-}
-
-@-webkit-keyframes mymove {
-    from {left: 0px;}
-    to {left: 1200px;}
-}
-@keyframes mymove {
-    from {left: 0px;}
-    to {left: 1200px;}
-}
-
+/* styling horizontal line*/
 hr {
     max-width: 10em;
     border-width: 0.5em;
